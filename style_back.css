@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #e6f0ff);
+  color: #333;
+  line-height: 1.6;
+}
+
+header.hero {
+  position: relative;
+  height: 40vh;
+  background-image: url('images/jparc_BG.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  animation: fadeIn 1.5s ease-out;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  background-color: #1e3a8a;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+main {
+  padding: 2rem;
+}
+
+.responsive-img {
+  max-width: 55%;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.responsive-img-research {
+  max-width: 95%;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e3a8a;
+  color: white;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* スクロールで表示アニメーション */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* スクロール後のナビスタイル */
+nav.scrolled {
+  background-color: #0d2562;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ページトップボタン */
+#topBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.6rem 1rem;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  display: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+#topBtn:hover {
+  background: #00aaff;
+}
+
+.highlight-quote {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.typewriter {
+  display: inline-block;
+  font-size: 1.8rem;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(30, end), blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.parallax-quote {
+  position: relative;
+  height: 45vh;
+  background-image: url('images/parallax-light2.jpg'); /* 光を含んだ宇宙っぽい画像が最適 */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.quote-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.quote-overlay h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* ロゴとテキストの間隔 */
+  padding: 1rem;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  opacity: 1.0;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  max-width: 160px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .quote-overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .responsive-img,
+  .responsive-img-research {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .quote-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .highlight-quote {
+    padding: 3rem 1rem;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+}

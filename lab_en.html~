@@ -1,0 +1,88 @@
+<!-- Lab Page (English Version) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Yudai Ichikawa - Lab Members and Research Group</title>
+
+  <meta name="description" content="Introducing the HypTPC group led by Yudai Ichikawa at Tohoku University, conducting hadron physics experiments at J-PARC.">
+  <meta name="keywords" content="Yudai Ichikawa, HypTPC, Tohoku University, Hadron Physics, J-PARC, E42, E90, Lab Members">
+
+  <meta property="og:title" content="Yudai Ichikawa - Lab Members and Research Group">
+  <meta property="og:description" content="Hadron physics research group at Tohoku University, working on HypTPC experiments at J-PARC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lambda.phys.tohoku.ac.jp/~ichikawa/">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero subpage-hero">
+    <div class="hero-overlay">
+      <h1>Research Group Overview</h1>
+      <p>Together with young researchers</p>
+      <p>Exploring the frontiers of hadron physics</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index_en.html">Home</a></li>
+        <li><a href="research_en.html">Research</a></li>
+        <li><a href="gyoseki_en.html">Publications</a></li>
+        <li><a href="education_en.html">Education</a></li>
+        <li><a href="lab_en.html" class="active">Members</a></li>
+        <li><a href="contact_en.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch">
+      <a href="index.html">JP</a>
+    </div>     
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <h2>About the HypTPC Subgroup</h2>
+      <p>
+        Our group aims to <strong>develop next-generation researchers in nuclear and hadron physics</strong>, with graduate students taking the leading role in experiments and data analysis.
+      </p>
+      <p>
+        Through HypTPC experiments at J-PARC (<strong>E42, E45, E72, E90, E104</strong>), internal lab meetings, and participation in domestic and international conferences, students engage in <strong>hands-on research activities</strong>.
+      </p>
+      <p>
+        The HypTPC experiments are conducted in collaboration with <strong>major Japanese institutions</strong> such as JAEA-ASRC, KEK, Osaka University (RCNP), and Kyoto University.
+      </p>
+      <p>
+        We also collaborate with <strong>international universities</strong> such as Korea University and Kyungpook National University in South Korea, and Lamar University in the United States.
+      </p>
+    </section>
+
+    <section class="lab-members">
+      <h2>HypTPC Group Members (Tohoku University)</h2>
+      <ul>
+        <li>Associate Professor: Yudai Ichikawa</li>
+        <li>Assistant Professor: Shuhei Hayakawa</li>
+        <li>Doctoral Students: [D3] Fumiya Oura (also in Ge Group), [D1] Ryuta Saito</li>
+        <li>Master’s Students: [M2] Koki Amemiya, [M2] Kaito Shimazaki, [M1] Ruri Sasaki, [M1] Yusuke Nakayama</li>
+	<li>Undergraduate Students: [B4] Tepei Adachi</li>
+      </ul>
+    </section>
+
+    <section class="lab-photo">
+      <h2>Scenes from Daily Life</h2>
+      <img src="images/E72_photo.pdf" alt="Lab group photo" class="responsive-img" />
+      <p class="caption">J-PARC E72 Run End</p>
+
+      <img src="images/E72member.jpg" alt="Group photo after meeting" class="responsive-img" />
+      <p class="caption">After the conference</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="Logo" class="footer-logo" />
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

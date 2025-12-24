@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>J-PARC E72 Achievement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title">J-PARC E72 Achievement</h1>
+      <p class="site-subtitle">
+        Summary of experiment progress and results.
+      </p>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="card">
+      <h2 class="card-title">E72 Progress Chart</h2>
+
+      <h3 class="card-subtitle">E72 Status</h3>
+      <div id="status-banner" class="status-banner" style="display:none;"></div>
+      <!-- ▼ コメント 5 行表示 -->
+      <div class="comment-block">
+        <h3 class="card-subtitle">Latest Comments</h3>
+        <p class="card-description small">
+          The last 5 lines from <code>comment.txt</code> 
+        </p>
+
+        <pre id="recent-comments" class="comment-box">Loading comments...</pre>
+      </div>
+      <!-- ▲ コメント表示ここまで -->
+
+
+      <h3 class="card-subtitle">E72 Progress</h3>
+      <p class="card-description">
+	
+	<div id="sheet-value" class="time-banner">
+	  Loading...
+	</div>
+	
+	
+      </p>
+      <!-- ▼ グラフ（画像版） -->
+      <div class="chart-wrapper">
+        <img
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTUxMXdMXeDWlcTc6SkrAiP7UU3olMYWS6BzmyMoqOPYV4iRHj5rB6xaNXb1_e907MGV89wWA74Sb2Q/pubchart?oid=1405854908&format=image"
+          alt="J-PARC E72 progress chart">
+      </div>
+
+
+      <!-- ▼ Live Screenshot -->
+      <h3>Live Monitor of HypTPC event display</h3>
+      <div class="live-monitor">	
+	
+	<!-- 自動更新される画像 -->
+	<img id="live-left-img" class="live-image" alt="Live Left Screen">
+      </div>
+
+      
+      <!-- ▼ グラフ（画像版） -->
+      <div class="chart-wrapper">
+	<h3>E72 momentum distribution</h3>	
+        <img
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTUxMXdMXeDWlcTc6SkrAiP7UU3olMYWS6BzmyMoqOPYV4iRHj5rB6xaNXb1_e907MGV89wWA74Sb2Q/pubchart?oid=1647834946&format=image"
+          alt="J-PARC E72 momentum ">
+      </div>
+
+      <!-- ▲ ここまでグラフ -->      
+
+      
+      <!-- ▼ テーブル -->
+      <div class="table-block">
+        <h3 class="card-subtitle">E72 Data Table</h3>
+        <p class="card-description small">
+          The Original spreadsheets
+        </p>
+
+        <div class="table-wrapper">
+          <iframe
+	    src="https://docs.google.com/spreadsheets/d/1InLDUJ0r0K-O6rJH3NRi5tuxHurfRHQ6BXPYSFhVyuA/edit?gid=207122671#gid=207122671&range=A1:G7"
+            loading="lazy"
+            scrolling="auto"
+            title="J-PARC E72 data table">
+          </iframe>
+        </div>
+      </div>
+      <!-- ▲ テーブルここまで -->
+
+      <!-- ▼ MPS テーブル -->
+      <div class="table-block">
+        <h3 class="card-subtitle">Downtime log</h3>
+        <div class="table-wrapper">
+          <iframe
+	    src="https://docs.google.com/spreadsheets/d/1P0U_w4yKungULmIA_7dGTlzvKPKREKn7k0yL0rjGDw0/edit?gid=0#gid=0&range=B224"
+            loading="lazy"
+            scrolling="auto"
+            title="MPS Status">
+          </iframe>
+        </div>
+      </div>
+      <!-- ▲ MPS テーブルここまで -->
+
+      
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; J-PARC E72 Collaboration</p>
+  </footer>
+
+  <!-- ▼ コメント読み込みスクリプト -->
+  <script>
+    async function loadComments() {
+      const box = document.getElementById('recent-comments');
+      try {
+        const res = await fetch('comment.txt?cb=' + Date.now());
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+
+        const text = await res.text();
+
+        // 改行統一
+        const lines = text.replace(/\r\n/g, '\n').split('\n');
+        const nonEmpty = lines.filter(l => l.trim() !== '');
+
+        const last5 = nonEmpty.slice(-5);
+
+        box.textContent = last5.length > 0
+          ? last5.join('\n')
+          : '(No comments yet)';
+      } catch (e) {
+        box.textContent = 'Failed to load comment.txt : ' + e.message;
+      }
+    }
+
+    loadComments();
+
+    async function loadBanner() {
+	try {
+	    const res = await fetch('comment.txt?cb=' + Date.now());
+	    if (!res.ok) throw new Error('HTTP ' + res.status);
+	    
+	    const text = await res.text();
+	    
+	    // 行として分割
+	    const lines = text.replace(/\r\n/g, "\n").trim().split("\n");
+	    const last = lines[lines.length - 1].trim();  // ← 最後の1行
+	    
+	    const banner = document.getElementById('status-banner');
+	    
+	    // ====== ★ 条件分岐（ここを書き換えるだけ）★ ======
+	    if (last.includes("STOP")) {
+		banner.innerHTML = "⚠ E72 Status: DAQ Stop";
+		banner.style.background = "#7f1d1d";   // 赤
+		banner.style.border = "1px solid #10b981";
+		banner.style.display = "block";
+	    }
+	    else if (last.includes("dummy")||last.includes("check")||last.includes("pedestal")) {
+		banner.innerHTML = "⚠ E72 Status: DAQ Running with dummy";
+		banner.style.background = "#78350f";   // 黄
+		banner.style.border = "1px solid #ef4444";
+		banner.style.display = "block";
+	    }
+	    else if (last.includes("START")||last.includes("Physics")) {
+		banner.innerHTML = "✔ E72 Status: DAQ Running";
+		banner.style.background = "#064e3b";   // 緑
+		banner.style.border = "1px solid #f59e0b";
+		banner.style.display = "block";
+	    }
+	    else {
+		// 条件に合致しない場合は非表示
+		banner.style.display = "none";
+	    }
+	    // ==============================================
+	} catch (e) {
+	    console.warn("Banner load error:", e);
+	}
+    }
+
+    // 初期表示＋30秒ごと更新
+    loadBanner();
+
+    
+    
+    const CELL_URL =
+	  "https://docs.google.com/spreadsheets/d/1InLDUJ0r0K-O6rJH3NRi5tuxHurfRHQ6BXPYSFhVyuA/export?format=csv&gid=207122671&range=S10";
+    const CELL_URL2 =
+	  "https://docs.google.com/spreadsheets/d/1InLDUJ0r0K-O6rJH3NRi5tuxHurfRHQ6BXPYSFhVyuA/export?format=csv&gid=207122671&range=S11";
+
+    async function loadSheetValue() {
+	const box = document.getElementById("sheet-value");
+	
+	try {
+	    const res = await fetch(CELL_URL + "&cb=" + Date.now()); // キャッシュ回避
+	    if (!res.ok) throw new Error("HTTP " + res.status);
+	    
+	    const value = (await res.text()).trim(); // S10 の値だけが返る
+
+	    const res2 = await fetch(CELL_URL2 + "&cb=" + Date.now()); // キャッシュ回避
+	    if (!res2.ok) throw new Error("HTTP " + res2.status);
+	    
+	    const value2 = (await res2.text()).trim(); // S10 の値だけが返る
+
+	    box.textContent = `Remaining required time: ${value} days`;
+	    box.textContent += `\nRemaining run time: ${value2} days`;
+	    
+	    
+	} catch (e) {
+	    box.textContent = "Error loading: " + e.message;
+	    console.error(e);
+	}
+    }
+    
+    // 初回ロード
+    loadSheetValue()
+    
+     function updateLiveImage() {
+	const img = document.getElementById("live-left-img");
+
+        // キャッシュ防止のため、クエリに現在時刻を追加                                                                                  
+        img.src = "left.png?ts=" + new Date().getTime();
+    }
+
+    // 初回読み込み
+    window.addEventListener("load", () => {
+	updateLiveImage();                // 最初の1回
+	setInterval(updateLiveImage, 10000); // その後10秒ごとに更新
+    });
+    
+    setInterval(loadComments, 30000);  // 30秒ごと更新
+  </script>
+  <!-- ▲ end script -->
+  
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- お問い合わせページ -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>市川裕大 - 東北大学 准教授（原子核・ハドロン物理学）</title>
+
+  <meta name="description" content="市川裕大（東北大学 理学部 准教授）。J-PARCにおいてエキゾチックハドロンや重イオン衝突を研究。HypTPCグループとしてE90実験などを推進。">
+
+  <meta name="keywords" content="市川裕大, Ichikawa Yudai, 東北大学, 原子核物理, ハドロン物理, J-PARC, HypTPC, E90, 重イオン衝突, エキゾチックハドロン">
+
+  <meta property="og:title" content="市川裕大 - 東北大学 准教授（原子核・ハドロン物理学）">
+  <meta property="og:description" content="J-PARCでのハドロン物理研究（特にE90実験）を行う、HypTPCグループの研究者です。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lambda.phys.tohoku.ac.jp/~ichikawa/">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero subpage-hero">
+    <div class="hero-overlay">
+      <h1>お問い合わせ</h1>
+      <p>連絡先とアクセス情報</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html" class="active">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>連絡先</h2>
+      <p> 東北大学 理学研究科　物理学専攻　原子核物理研究室</p>
+      <p>〒980-8578　宮城県仙台市青葉区荒巻字青葉6-3 </p>
+      <p>メール: yudai.ichikawa.d3[at]tohoku.ac.jp</p>
+    </section>
+
+    <section class="access-section">
+      <h2>アクセス</h2>
+      <p>最寄り駅：青葉山駅より徒歩</p>
+      <p>キャンパスマップ：<a href="https://www.tohoku.ac.jp/japanese/profile/campus/01/aobayama/areah.html" target="_blank">大学アクセス情報</p>
+    </section>
+  </main>
+
+ <footer>
+	<div class="footer-content">
+    	<img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+	  </div>  
+　</footer>
+  <script src="script.js"></script>
+</body>
+</html>

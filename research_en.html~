@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>市川裕大 - 東北大学 准教授（原子核・ハドロン物理学）</title>
+
+  <meta name="description" content="市川裕大（東北大学 理学部 准教授）。J-PARCにおいてエキゾチックハドロンや重イオン衝突を研究。HypTPCグループとしてE90実験などを推進。">
+
+  <meta name="keywords" content="市川裕大, Ichikawa Yudai, 東北大学, 原子核物理, ハドロン物理, J-PARC, HypTPC, E90, 重イオン衝突, エキゾチックハドロン">
+
+  <meta property="og:title" content="市川裕大 - 東北大学 准教授（原子核・ハドロン物理学）">
+  <meta property="og:description" content="J-PARCでのハドロン物理研究（特にE90実験）を行う、HypTPCグループの研究者です。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lambda.phys.tohoku.ac.jp/~ichikawa/">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero subpage-hero">
+    <div class="hero-overlay">
+      <h1>研究内容</h1>
+      <p>HypTPCを用いたハドロン実験</p>
+      <p>/ 重イオン衝突実験（J-PARC-HI）</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="research-overview">
+<h2>J-PARC における HypTPC を用いたハドロン実験</h2>
+
+<p>
+  本研究グループでは、J-PARC ハドロンホールにおいて、
+  クォークから物質がつくられるしくみを明らかにすることを目指し、
+  ハドロン物理学のフロンティアに挑む実験研究を展開しています。
+</p>
+
+<p>
+  物質を構成する最も基本的な構成要素である <strong>クォーク</strong>は、単独で存在することはできず、
+  常に複数のクォークが結合して <strong>ハドロン</strong> として閉じ込められた状態で存在しています。
+</p>
+
+<p>
+  通常のハドロンは、3つのクォークからなる <strong>バリオン</strong>（例：陽子・中性子）や、
+  クォークと反クォークの対からなる <strong>メソン</strong> に分類されます。
+</p>
+
+<p>
+  しかし、クォークにはたらく強い相互作用の基礎理論である
+  <strong>量子色力学（QCD）</strong>は、これらにとどまらず、
+  より複雑な構造をもつ <strong>エキゾチックハドロン</strong>
+  ― たとえば、2つのクォークと2つの反クォークから成るテトラクォーク、
+  4つのクォークと1つの反クォークで構成されるペンタクォーク ― の存在をも予言しています。
+</p>
+
+<p>
+  近年、Belle（日本）や LHCb（ヨーロッパ）などの国際共同実験により、
+  これらエキゾチックハドロンの候補粒子が次々と発見され、物質の成り立ちに新たな視点が加わりつつあります。
+</p>
+
+<p>
+  我々は、バリオンやメソンといった通常のハドロンを超える存在である
+  <strong>エキゾチックハドロン</strong>の性質を系統的に調べることで、
+  クォークがどのように束縛され、ハドロンを構成していくのか ―
+  すなわち「<strong>ハドロン化のメカニズム</strong>」の核心に迫ろうとしています。
+</p>
+
+<p>
+  <strong>HypTPCグループ</strong> は、J-PARC のハドロンホールにおいて、
+  独自開発した三次元飛跡検出器 <strong>HypTPC（Time Projection Chamber）</strong> を駆使し、
+  最先端の実験手法を用いてエキゾチックハドロンの探索とその性質の解明に取り組んでいます。
+</p>
+
+    </section>
+
+    <section class="detector-section">
+      <h3>三次元飛跡検出器HypTPCを用いたJ-PARC実験</h3>
+      <p>
+	我々は、三次元飛跡検出器 <strong>HypTPC（Time Projection Chamber）</strong> を用いて J-PARC において実験を行なっています。
+     </p>
+      <p>
+	以下の図は HypTPC の構造と、それを用いた実験プログラムの概要を示しています。
+     </p>
+      <p>
+	我々は、HypTPC を用いて <strong>5つの実験（E42, E45, E72, E90, E104）</strong> を提案しています。
+     </p>
+      <p>
+	これらの実験は、いずれも <strong>エキゾチックハドロンと密接に関係</strong>した実験です。	
+     </p>
+      <p>
+	各実験の詳細は、以下の実験提案書を参照してください。
+     </p>
+      <p>
+	<a href="https://j-parc.jp/researcher/Hadron/en/pac_1201/pdf/KEK_J-PARC-PAC2011-06.pdf" target="_blank">E42実験：Hダイバリオン探索実験（6クォーク状態はあるのか？）</a>
+      </p>
+      <p>
+	<a href="https://j-parc.jp/researcher/Hadron/en/pac_1207/pdf/P45_2012-3.pdf" target="_blank">E45実験：ハドロン分光実験（ハイブリットバリオンの候補は？）</a>
+      </p>
+      <p>
+	<a href="https://j-parc.jp/researcher/Hadron/en/pac_1801/pdf/P72_2018-9.pdf" target="_blank">E72実験：Λ*分光実験（エキゾチックハドロンの可能性大）</a>
+      </p>
+      <p>
+	<a href="https://j-parc.jp/researcher/Hadron/en/pac_2201/pdf/P90_2022-03.pdf" target="_blank">E90実験：ΣNカスプ分光実験（重水素のようなストレンジダイバリオン？）</a>
+      </p>
+     <p>
+	<a href="https://j-parc.jp/researcher/Hadron/en/pac_2501/pdf/P104_2025-12.pdf" target="_blank">E104実験：ダブルφ生成実験（グルーボールと関係？））</a>
+      </p>
+     <p>
+	<a href="https://j-parc.jp/researcher/Hadron/en/pac_2407/pdf/LOI_2024-10.pdf" target="_blank">LOI (to be submitted)：Θ+探索実験（uuddsbarペンタクォークはあるのか?）</a>
+      </p>
+     <p>
+	その他のJ-PARCの実験の実験提案書は、このページから見ることができます →
+	<a href="https://j-parc.jp/researcher/Hadron/en/Proposal_e.html" target="_blank">J-PARC Proposal</a>
+      </p>
+
+
+
+      <img src="images/HypTPC.png" alt="HypTPCとJ-PARCでの実験" class="responsive-img-research" />
+    </section>
+  </main>
+
+<section class="research-overview">
+<h2>重イオン衝突実験</h2>
+
+<p>
+  現在の J-PARC は陽子加速器として運用されていますが、将来的には陽子に加えて
+  <strong>重イオンビームの加速</strong>を実現する計画が進められています。
+  これが <strong>J-PARC-HI（Heavy Ion）プロジェクト</strong>です。
+</p>
+
+<p>
+  CERN（ヨーロッパ）の ALICE 実験や、アメリカ BNL の RHIC 加速器における実験では、
+  高エネルギー下での重イオン衝突により、クォークがハドロンから解放されて自由に存在する
+  <strong>クォーク・グルーオン・プラズマ（QGP）</strong> の形成が観測されています。
+</p>
+
+<p>
+  すなわち、クォークとハドロンの間には、
+  <strong>高温・高密度環境下での相転移</strong>が存在すると考えられています。
+  クォークがハドロンに束縛される状態から、QGP という新たな相へと移行するこの現象は、
+  強い相互作用の本質に迫る鍵を握っています。
+</p>
+
+<p>
+  この「状態の変化」は、私たちに身近な <strong>水の相転移</strong>を通じて直感的に理解することができます。
+  水は温度や圧力の変化によって、固体（氷）→ 液体（水）→ 気体（水蒸気）と形を変えます。
+  クォーク・ハドロン系も同様に、<strong>密度（∝ ケミカルポテンシャル μ<sub>b</sub>）</strong>が
+  高くなると、クォークが閉じ込められた状態から解放され、QGP が生成されると考えられています。
+</p>
+
+<p>
+  これまでの超高エネルギー（高温）下での実験（CERN、BNL）では、
+  QGP への変化が<strong>連続的（クロスオーバー）な相転移</strong>であることが示唆されています。
+  しかし、QCD 相図（温度 T とケミカルポテンシャル μ<sub>b</sub> による相図）における
+  <strong>高密度領域</strong>では、この転移が連続ではなく、
+  一定の条件を境に急激に状態が変わる <strong>一次相転移</strong>が生じると考えられており、
+  その転換点が <strong>QCDクリティカルポイント（臨界点）</strong> として予想されています。
+</p>
+
+<p>
+  このように近年では、CERN における超高温実験に加え、
+  <strong>中高エネルギー領域で超高密度状態を実現可能な重イオン衝突実験</strong> に注目が集まっています。
+  J-PARC-HI プロジェクトでは、1–19 AGeV（√s<sub>NN</sub> = 2–6.2 GeV）のエネルギー域において
+  <strong>重イオン衝突</strong>を実施し、原子核密度の 5〜10 倍に相当する
+  <strong>高密度状態</strong>を創出、その中でのハドロンの性質や変化を精密に調べます。
+</p>
+
+<p>
+  このエネルギー領域における研究は、J-PARC（日本）だけでなく、
+  アメリカ（RHIC-STAR（BES））、ドイツ（GSI-FAIR）、ロシア（NICA）などでも進行・計画されており、
+  世界的な研究の最前線として位置づけられています。
+</p>
+
+<p>
+  <strong>クォークからハドロンへの相転移が本当に一次相転移であるのか？</strong>
+  <br>
+  <strong>QCD クリティカルポイントは実在するのか？</strong>
+  <br>
+  これらは、未だ答えの見つかっていない根本的な問いです。
+  もしその存在が明確に確認されれば、強い相互作用の理解に革命をもたらし、
+  <strong>ノーベル賞級の成果</strong>となる可能性を秘めています。
+</p>
+
+<p>
+  我々は、J-PARC-HI 実験において <strong>超高密度状態でのハドロン物理の解明</strong>に挑むとともに、
+  <strong>粒子間相関（Femtoscopy）</strong>を用いたハドロン間相互作用の研究も進めていく予定です。
+  また、これを契機として他の国際的な重イオン衝突実験への連携・参加も視野に入れています。
+</p>
+
+<p>
+  本プロジェクトはまだ始動したばかりですが、今後さらに発展させていく計画です。
+</p>
+
+<p>
+  J-PARC-HI におけるハドロン間測定に関する詳細はこちら → 
+  <a href="https://doi.org/10.1016/j.jspc.2025.100040" target="_blank" rel="noopener">J-PARC-HI Femtoscopy</a>
+</p>
+
+  <p>
+    J-PARC-HI プロジェクト全体に関する詳細はこちら → 
+    <a href="https://asrc.jaea.go.jp/soshiki/gr/hadron/jparc-hi/" target="_blank">J-PARC-HIのページ</a>
+  </p>
+   <img src="images/qcd-diagram.png" alt="QCD相図" class="responsive-img-research" />
+</section>
+
+
+
+  <footer>
+	<div class="footer-content">
+    	<img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+	  </div>  
+　</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
