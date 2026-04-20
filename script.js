@@ -89,4 +89,69 @@ document.addEventListener('DOMContentLoaded', () => {
             topBtn.style.display = 'none';
         }
     });
+
+    // 5. Universal Lightbox for Images
+    const zoomableImages = document.querySelectorAll('.lab-gallery img, .card img:not(.footer-logo)');
+    
+    if (zoomableImages.length > 0) {
+        // Create Lightbox Elements if they don't exist
+        let overlay = document.querySelector('.lightbox-overlay');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.className = 'lightbox-overlay';
+            overlay.innerHTML = `
+                <div class="lightbox-content">
+                    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+                    <img src="" alt="Enlarged view" class="lightbox-img">
+                    <div class="lightbox-caption"></div>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        }
+
+        const lightboxImg = overlay.querySelector('.lightbox-img');
+        const lightboxCaption = overlay.querySelector('.lightbox-caption');
+        const closeBtn = overlay.querySelector('.lightbox-close');
+
+        zoomableImages.forEach(img => {
+            // Add a pointer cursor to indicate it's clickable
+            img.style.cursor = 'zoom-in';
+            
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                
+                // Try to find a caption (from alt or sibling p)
+                let captionText = img.getAttribute('alt') || '';
+                const siblingP = img.nextElementSibling;
+                if (siblingP && siblingP.tagName === 'P') {
+                    captionText = siblingP.textContent;
+                }
+                
+                lightboxCaption.textContent = captionText;
+                lightboxCaption.style.display = captionText ? 'block' : 'none';
+                
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+
+        const closeLightbox = () => {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        closeBtn.addEventListener('click', closeLightbox);
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                closeLightbox();
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    }
 });
