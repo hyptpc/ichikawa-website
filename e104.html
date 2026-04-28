@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E104実験: ダブルφ生成実験 - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="lang-switch"><a href="e104_en.html">EN</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>E104実験: ダブルφ生成実験</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>物理的な動機・背景 (Physics Motivation)</h2>
+          <p>素粒子物理学には「OZI（大久保・ツワイク・飯塚）則」と呼ばれる強い経験則があります。これは、ファインマン図においてクォークの線が途切れる（初めのクォークが対消滅し、完全に新しいクォーク対がグルーオンから生まれる）ような反応は、非常に起こりにくいというルールです。
+例えば、陽子・反陽子衝突から、ストレンジクォークのみで構成されるφ中間子（ss̄）を2つも生成する反応（p̄p → φφ）は、このOZI則によって極端に抑制されるはずです。しかし、過去の実験（JETSETなど）において、閾値付近のエネルギーでこの反応の断面積がOZI則の予測を2桁（100倍）も上回るという「OZI則の異常な破れ」が報告されました。
+なぜこのような巨大な破れが起きるのでしょうか？最も魅力的な仮説の一つは、反応の途中でクォークを持たないグルーオンだけの塊「グルーボール」が生成され、それがφ中間子に崩壊しているというものです。これはQCDの最も根本的な予言の一つを検証するエキサイティングな研究です。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e104_img0.png" alt="E104実験: ダブルφ生成実験 Figure" onerror="this.style.display='none'">
+          <p class="caption">陽子・反陽子衝突におけるダブルφ生成反応のダイヤグラム。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>実験の概要 (The Experiment)</h2>
+          <p>閾値近傍の p̄p → φφ 反応について、これまで全くデータが存在しなかった領域（閾値から1.1 GeV/c）をJ-PARCのK1.8BRビームラインとHypTPCを用いて初めて探索します。HypTPCの巨大な立体角と高い飛跡検出能力により、稀なダブルストレンジネス生成を極めて高い効率で捕らえ、スピン密度行列などの偏極観測量を測定することで、この異常な断面積の振る舞いの背後にあるメカニズムを解き明かします。</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_2501/pdf/P104_2025-12.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            詳細な実験提案書（PDF）はこちら
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research.html" style="color: var(--primary-color); text-decoration: underline;">研究内容一覧に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

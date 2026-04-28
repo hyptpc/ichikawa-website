@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E45実験: ハドロン分光実験 - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="lang-switch"><a href="e45_en.html">EN</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>E45実験: ハドロン分光実験</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>物理的な動機・背景 (Physics Motivation)</h2>
+          <p>陽子や中性子の中では、クォーク同士が「グルーオン」を交換することで強い相互作用（カラー力）が生じています。QCD（量子色力学）が電磁気学と大きく異なるのは、力を伝えるグルーオン自身もカラー電荷を持ち、グルーオン同士が相互作用できるという非可換性（Non-Abelian nature）にあります。
+通常、グルーオンは力を伝える単なる「接着剤」として扱われますが、QCDの性質上、この接着剤自体が振動（励起）してエネルギーを持ち、粒子を構成する一部として振る舞う状態が存在し得ます。これが「ハイブリッドバリオン（qqqg）」です。
+近年の格子QCD計算により、質量が2 GeV付近にハイブリッドバリオンが存在することが予言されています。これを発見することは、グルーオンが単なる力の媒介者ではなく、ハドロンの質量や構造を担う実体として振る舞うことの直接的な証明となり、非摂動的QCDの理解において画期的なマイルストーンとなります。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e45_img0.png" alt="E45実験: ハドロン分光実験 Figure" onerror="this.style.display='none'">
+          <p class="caption">格子QCD計算による核子共鳴。灰色の四角は従来のqqq状態、青色の四角はハイブリッドバリオンを示しています。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>実験の概要 (The Experiment)</h2>
+          <p>ハイブリッドバリオンのような新粒子は、幅が広く他の多くのバリオン共鳴と重なり合っているため、発見が困難です。J-PARCのK1.8ビームラインにおいて、大立体角のHypTPCスペクトロメータを使用し、πN → ππN および πN → KY 反応の散乱角度分布などをかつてない精度で測定します。広範囲の重心系エネルギーをスキャンし、精密な部分波解析（Partial-Wave Analysis）を行うことで、重なり合う共鳴の中からハイブリッドバリオンの兆候を捉えることを目指します。</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_1207/pdf/P45_2012-3.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            詳細な実験提案書（PDF）はこちら
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research.html" style="color: var(--primary-color); text-decoration: underline;">研究内容一覧に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

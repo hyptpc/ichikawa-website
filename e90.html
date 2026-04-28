@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E90実験: ΣNカスプ分光実験 - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="lang-switch"><a href="e90_en.html">EN</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>E90実験: ΣNカスプ分光実験</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>物理的な動機・背景 (Physics Motivation)</h2>
+          
+          <h3 style="font-size: 1.25rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--surface-border); padding-bottom: 0.3rem;">ハイペロンと核子の相互作用の謎</h3>
+          <p>陽子と中性子が「強い力（核力）」で結合して「重陽子」ができることはよく知られています。では、ストレンジクォークを含むハイペロン（Σ粒子やΛ粒子など）は、核子と結合できるのでしょうか？ハイペロンと核子の相互作用を解明することは、単なる原子核物理の興味に留まらず、超高密度状態である「中性子星」の中心部で何が起きているのかを理解するためにも不可欠なテーマです。</p>
+
+          <h3 style="font-size: 1.25rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--surface-border); padding-bottom: 0.3rem;">過去の実験における「ΣNカスプ」の発見</h3>
+          <p>過去の実験において、K-ビームを重陽子に当てた反応で、ちょうどΣ粒子と核子（N）が生成される閾値のエネルギー付近において、「ΣNカスプ」と呼ばれる鋭いピーク（事象の増大）が観測されました。量子力学の散乱理論によれば、閾値に鋭いカスプが現れることは、そのすぐ近くに「極（Pole）」が存在することを強く示唆します。しかし、これがストレンジクォークを含む重陽子のような「不安定な束縛状態」の証拠なのかについては、数十年来の未解決問題となっていました。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e90_fig.png" alt="E90実験: ΣNカスプ分光実験 Figure" onerror="this.style.display='none'">
+          <p class="caption">過去の実験データに見られる欠損質量スペクトルの概念図。ΣN生成閾値にぴったり一致する位置に「カスプ（尖点）」と呼ばれる事象の増大が現れています。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h3 style="font-size: 1.25rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--surface-border); padding-bottom: 0.3rem;">Dalitz理論と散乱長によるアプローチ</h3>
+          <p>この長年の謎に対して、Dalitzらによる理論研究は重要な糸口を与えました。彼らの研究によって、この極の位置は、ΣN間の相互作用を特徴づける「散乱長（a + ib）」と密接に関係付けられることが明らかになりました。例えば、実部 a の値が負であった場合には、ΣNの二体の束縛状態（重陽子のような状態）が存在することを意味します。また、虚部 b の値は、ΣNチャンネルとΛNチャンネル間の結合力（遷移の強さ）を表すパラメータとなっています。以下の図に示すように、「ΣNカスプ」のスペクトル形状は、これら散乱長 (a + ib [fm]) のパラメータ値に依存して大きく変化することがわかっています。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e90_fig_scattering.png" alt="散乱長によるΣNカスプの形状の変化" onerror="this.style.display='none'">
+          <p class="caption">散乱長（a + ib [fm]）によるΣNカスプ形状の変化の理論計算。散乱長パラメータによってピークの形が鋭く変化します。</p>
+        </div>
+        
+        <div class="experiment-section">
+          <p>この理論的な性質を使って、E90実験ではΣNカスプの形状を極めて正確に測定することにより、ΣN間の散乱長を精度良く求めることを目指しています。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>実験の概要 (The Experiment)</h2>
+          <p>J-PARCのK1.8ビームラインの高強度K-ビーム、高分解能S-2Sスペクトロメータ、そして崩壊粒子を捉えるHypTPCを組み合わせ、1.4 GeV/cでの d(K-, π-) 反応を精密測定します。過去の実験を凌駕する世界最高分解能（欠損質量分解能 0.4 MeV）と圧倒的な高統計のデータにより、散乱長を高精度に測定し、Σ粒子と核子が重陽子のような束縛状態を形成するのか否かを調べます。</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_2201/pdf/P90_2022-03.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            詳細な実験提案書（PDF）はこちら
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research.html" style="color: var(--primary-color); text-decoration: underline;">研究内容一覧に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

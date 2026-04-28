@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOI: Θ+探索実験 - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="lang-switch"><a href="loi_en.html">EN</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>LOI: Θ+探索実験</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>物理的な動機・背景 (Physics Motivation)</h2>
+          <p>「クォーク5つからなる粒子（ペンタクォーク）は存在するのか？」
+2003年、SPring-8のLEPS実験によって報告されたΘ+（uudds̄）の発見は、ストレンジネス+1を持つため3つのクォークでは絶対に構成できない真のエキゾチック粒子として、世界中の物理学界を熱狂させました。
+しかし、その後の世界各地での高統計な追試実験では肯定的な結果が再現されず、現在では「存在しない」という見方が大勢を占め、Particle Data Groupのリストからも削除されました。それでも、カイラルソリトン模型などの理論は極めて幅の狭い低質量の状態を強く予言しており、過去の実験が特定の運動学的な条件や背景事象の多さによってシグナルを見逃している可能性は完全には否定しきれていません。
+ハドロン物理学の歴史において最も激しい論争を巻き起こしたこのペンタクォーク問題に、今度こそ誰もが納得する決定的な終止符を打つことが、この実験の最大のモチベーションです。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/loi_img0.png" alt="LOI: Θ+探索実験 Figure" onerror="this.style.display='none'">
+          <p class="caption">カイラルソリトン模型によって予言されたバリオンの反十重項（Anti-decuplet）。通常のクォーク模型にはない、ストレンジネス+1を持つ図の頂点のエキゾチックな状態がΘ+ペンタクォークです。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>実験の概要 (The Experiment)</h2>
+          <p>J-PARCにおいて、運動量 0.5 GeV/c のK+ビームを重水素標的に当てる K+d → K0pp 反応を用い、Θ+の直接生成（フォーメーション）を試みます。HypTPCと1テスラ超伝導電磁石を駆使し、Θ+の崩壊生成物（K0と陽子）をバックグラウンドなしに排他的に測定します。わずか2日間のビームタイムで、過去のいかなる実験よりも約3桁も高い統計精度を達成し、「本当にあるのか、ないのか」の最終結論を出します。</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_2407/pdf/LOI_2024-10.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            詳細な実験提案書（PDF）はこちら
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research.html" style="color: var(--primary-color); text-decoration: underline;">研究内容一覧に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

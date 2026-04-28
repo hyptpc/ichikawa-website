@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E42実験: Hダイバリオン探索実験 - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="lang-switch"><a href="e42_en.html">EN</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>E42実験: Hダイバリオン探索実験</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>物理的な動機・背景 (Physics Motivation)</h2>
+          <p>通常のハドロンは、クォークが3つ集まった「バリオン（陽子や中性子など）」か、クォークと反クォークがペアになった「中間子」で構成されています。では、クォークが6つ集まった状態は存在するのでしょうか？
+1977年、R. Jaffeはパウリの排他律とカラー磁気相互作用の観点から、きわめて対称性が高く強く束縛された6クォーク状態「Hダイバリオン（uuddss）」の存在を予言しました。特に、Hダイバリオンの探求は、ハドロンの質量や引力の起源となる<strong>クォーク間の相互作用である「色磁気相互作用（Color-magnetic interaction）」</strong>を深く理解する上で非常に重要です。
+近年では、第一原理計算（格子QCD）を主導するHAL QCDコラボレーションにより、当初想定されていたΛΛ閾値付近ではなく、より質量の重いΞN（グサイ・核子）閾値付近に共鳴状態が存在する可能性が示唆されるなど、理論的にも新たな展開を見せています。
+もしHダイバリオンが発見されれば、これまでのクォーク模型の常識を打ち破る「多クォーク状態（マルチクォーク）」の決定的な証拠となります。これは強い相互作用（QCD）が基本粒子をどのように結びつけるのかという、根本的な理解を深める極めて重要でエキサイティングな研究テーマです。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e42_img1.png" alt="E42実験: Hダイバリオン探索実験 Figure" onerror="this.style.display='none'">
+          <p class="caption">過去の実験（KEK E522）で得られたΛΛ不変質量スペクトル。ΛΛ生成の閾値付近に事象の増大（エンハンスメント）が見られ、Hダイバリオン共鳴や強い引力の存在を示唆しています。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>実験の概要 (The Experiment)</h2>
+          <p>本実験では、J-PARCの大強度K-ビームを用いた (K-, K+) 反応により、原子核標的から「ダブルΛ状態」や「Ξ-粒子」を生成します。大立体角・高分解能検出器「HypTPC」を用いて、生成された粒子の飛跡を3次元的に捉え、崩壊を精密に測定します。
+E42実験のデータ取得は2021年に無事完了しました。現在、本命であるHダイバリオンの探索に関する詳細な解析が進行中ですが、それに先駆けて、1.8 GeV/c におけるΞ-およびΛΛの生成断面積に関する重要な測定結果が学術誌PTEPに出版されました（<a href="https://doi.org/10.1093/ptep/ptaf064" target="_blank" rel="noopener">PTEP 2025, 091D01</a>）。この結果は、核媒質中でのΞ粒子の崩壊幅の上限に制限を与えるなど、今後の解析に向けた大きなマイルストーンとなっています。</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_1201/pdf/KEK_J-PARC-PAC2011-06.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            詳細な実験提案書（PDF）はこちら
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research.html" style="color: var(--primary-color); text-decoration: underline;">研究内容一覧に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

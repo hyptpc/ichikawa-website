@@ -11,7 +11,11 @@
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --nav-bg: rgba(15, 23, 42, 0.8);
+    --hero-overlay-top: rgba(15, 23, 42, 0.7);
     --card-bg: rgba(30, 41, 59, 0.5);
+    
+    --title-gradient: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%);
+    --title-shadow: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.8));
     
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -28,7 +32,11 @@
         --text-main: #0f172a;
         --text-muted: #475569;
         --nav-bg: rgba(248, 250, 252, 0.8);
+        --hero-overlay-top: rgba(248, 250, 252, 0.7);
         --card-bg: rgba(255, 255, 255, 0.8);
+        
+        --title-gradient: linear-gradient(135deg, #0f172a 0%, #2563eb 100%);
+        --title-shadow: drop-shadow(0 4px 15px rgba(255, 255, 255, 1));
     }
 }
 
@@ -61,7 +69,7 @@ header.hero {
     position: relative;
     height: 60vh;
     min-height: 400px;
-    background-image: url('images/jparc_BG.jpg');
+    background-image: url('test_groupHP/img/strangeness-title-j.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -79,7 +87,7 @@ header.hero {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), var(--bg-color));
+    background: linear-gradient(to bottom, var(--hero-overlay-top), var(--bg-color));
 }
 
 .hero-overlay {
@@ -93,10 +101,11 @@ header.hero {
 .hero-overlay h1 {
     font-size: 3.5rem;
     margin-bottom: 0.5rem;
-    background: linear-gradient(to right, #fff, var(--primary-color));
+    background: var(--title-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: var(--title-shadow);
 }
 
 .hero-overlay h2 {
@@ -353,7 +362,7 @@ section h2 {
 .parallax-quote {
     position: relative;
     height: 50vh;
-    background-image: url('images/parallax-light2.jpg');
+    background-image: url('images/parallax-physics.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -367,7 +376,6 @@ section h2 {
 
 .quote-overlay {
     background: rgba(15, 23, 42, 0.6);
-    backdrop-filter: blur(4px);
     padding: 3rem;
     border-radius: 2rem;
     text-align: center;
@@ -556,4 +564,26 @@ footer {
         font-size: 1.1rem;
         line-height: 1.6;
     }
+}
+
+/* --- Detail Buttons --- */
+/* --- Detail Buttons --- */
+.detail-btn {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--surface-border);
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.detail-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
 }

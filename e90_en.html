@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E90: ΣN Cusp Spectroscopy - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index_en.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index_en.html">Home</a></li>
+        <li><a href="research_en.html" class="active">Research</a></li>
+        <li><a href="gyoseki_en.html">Publications</a></li>
+        <li><a href="education_en.html">Education</a></li>
+        <li><a href="lab_en.html">Lab</a></li>
+        <li><a href="contact_en.html">Contact</a></li>
+        <li class="lang-switch"><a href="e90.html">JP</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>E90: ΣN Cusp Spectroscopy</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>Physics Motivation</h2>
+          
+          <h3 style="font-size: 1.25rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--surface-border); padding-bottom: 0.3rem;">The Mystery of Hyperon-Nucleon Interaction</h3>
+          <p>It is well known that the strong nuclear force binds a proton and a neutron to form a deuteron. But can a hyperon (a baryon containing a strange quark, such as Σ or Λ) bind with a nucleon? Understanding hyperon-nucleon interactions is not only important for nuclear physics but is also absolutely crucial for astrophysics, specifically for modeling the incredibly dense cores of neutron stars.</p>
+
+          <h3 style="font-size: 1.25rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--surface-border); padding-bottom: 0.3rem;">Discovery of the "ΣN Cusp"</h3>
+          <p>In past experiments using K- beams on a deuterium target, a sharp spike or 'cusp' (an enhancement in events) was observed exactly at the threshold energy where a Σ and a nucleon (N) are produced. In quantum scattering theory, a sharp cusp at a threshold strongly suggests the presence of a 'pole' nearby. However, whether this is the signature of an unstable bound state—a 'strange deuteron'—has been an unresolved mystery for decades.</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e90_fig.png" alt="E90: ΣN Cusp Spectroscopy Figure" onerror="this.style.display='none'">
+          <p class="caption">Conceptual missing mass spectrum from previous experiments. A sharp enhancement known as a 'cusp' appears exactly at the ΣN production threshold.</p>
+        </div>
+
+        <div class="experiment-section">
+          <h3 style="font-size: 1.25rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--surface-border); padding-bottom: 0.3rem;">Dalitz's Theory and the Scattering Length Approach</h3>
+          <p>Theoretical studies by Dalitz et al. provided a crucial breakthrough for this long-standing mystery. They revealed that the position of this pole is closely related to the "scattering length (a + ib)", which characterizes the interaction between Σ and N. For example, if the real part 'a' is negative, it implies the existence of a two-body bound state (a deuteron-like state) of ΣN. Furthermore, the imaginary part 'b' represents the coupling strength between the ΣN and ΛN channels. As shown in the figure below, the spectral shape of the "ΣN cusp" changes significantly depending on these scattering length parameters (a + ib [fm]).</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e90_fig_scattering.png" alt="Changes in ΣN cusp shape depending on scattering length" onerror="this.style.display='none'">
+          <p class="caption">Theoretical calculation of the ΣN cusp shape variation with the scattering length (a + ib [fm]). The shape of the peak changes sharply depending on the scattering length parameters.</p>
+        </div>
+
+        <div class="experiment-section">
+          <p>Utilizing this theoretical property, the E90 experiment aims to precisely determine the scattering length between Σ and N by accurately measuring the shape of the ΣN cusp.</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>The Experiment</h2>
+          <p>By combining the high-intensity K- beam at J-PARC's K1.8 beam line, the high-resolution S-2S spectrometer, and the HypTPC to track decay particles, we will precisely measure the d(K-, π-) reaction at 1.4 GeV/c. Achieving the world's best missing-mass resolution (0.4 MeV) and massive statistics, we will accurately measure the scattering length and investigate whether the Σ particle and nucleon form a deuteron-like bound state.</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_2201/pdf/P90_2022-03.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            View Detailed Proposal (PDF)
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research_en.html" style="color: var(--primary-color); text-decoration: underline;">Back to Research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

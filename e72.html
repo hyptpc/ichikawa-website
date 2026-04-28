@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E72実験: Λ*分光実験 - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">論文・業績</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="lab.html">メンバー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="lang-switch"><a href="e72_en.html">EN</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>E72実験: Λ*分光実験</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>物理的な動機・背景 (Physics Motivation)</h2>
+          <p>クォーク模型は、これまで多くの粒子の質量や性質を見事に分類・説明してきました。しかし、K-p → Λη 反応を用いたCrystal Ball実験の角度分布データにおいて、特定のビームエネルギー（P_K- = 734 MeV/c 付近）でパラボリックな（放物線状の）挙動を示すなど、特異な振る舞いが観測されています。この現象は質量約1665 MeVの非常に幅の狭い（約10 MeV）「Λ*（ラムダ・スター）共鳴」の存在を示唆しています。
+もしこの状態が単純な3つのクォーク（uds）からなる状態であれば、強い相互作用による崩壊によってもっと幅が広くなるはずであり、クォーク模型と矛盾します。
+中間子とバリオンが分子のように結びついた状態もしくは、4つのクォークと1つの反クォークからなるペンタクォーク状態である「エキゾチックハドロン」の可能性が示唆されています。有名なΛ(1405)も、現在ではK中間子と核子の分子状態であると考えられています。この狭いΛ*(1665)の正体を突き止めることは、ハドロンが単なるクォークの塊ではなく、「ハドロン分子」や「ペンタクォーク」という新しい階層構造を持ち得ることを証明する重要なステップです。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e72_img_crystal_ball.png" alt="E72実験: Λ*分光実験 Figure" onerror="this.style.display='none'">
+          <p class="caption">Crystal Ball実験によって得られた K-p → Λη 反応の微分断面積。特定のビームエネルギー（734 MeV/c）において角度分布が他のエネルギーとは異なるパラボリックな挙動を示しており、非常に幅の狭いΛ*共鳴の存在を示唆しています（図中の赤い実線）。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>実験の概要 (The Experiment)</h2>
+          <p>J-PARCにて、K-ビームを陽子に衝突させる K-p → Λη 反応を用い、この未確認粒子の決定的証拠を探します。新たに完成した大立体角のHypTPC検出器をフル活用することで、運動学的な制限なく崩壊粒子を捉えます。この狭いΛ*(1665)の存在を確立し、さらに角度分布とΛ粒子の偏極度の解析からそのスピン・パリティといった詳細な量子数を決定します。なお、本実験は2025年11月にデータ取得を行ないました。</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_1801/pdf/P72_2018-9.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            詳細な実験提案書（PDF）はこちら
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research.html" style="color: var(--primary-color); text-decoration: underline;">研究内容一覧に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exploring High-Density Nuclear Matter via Femtoscopy - Y. Ichikawa</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index_en.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index_en.html">Home</a></li>
+        <li><a href="research_en.html" class="active">Research</a></li>
+        <li><a href="gyoseki_en.html">Publications</a></li>
+        <li><a href="education_en.html">Education</a></li>
+        <li><a href="lab_en.html">Lab</a></li>
+        <li><a href="contact_en.html">Contact</a></li>
+        <li class="lang-switch"><a href="femto.html">JP</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>Exploring High-Density Nuclear Matter via Femtoscopy</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>Physics Motivation</h2>
+          <p>Investigating the baryon-baryon (BB) interaction, in particular the Λ-nucleon (ΛN) interaction at high densities, remains a cornerstone of nuclear and hadron physics. This is fundamentally linked to the "hyperon puzzle" in neutron stars. Theoretically, introducing hyperons into dense matter softens the nuclear equation of state (EoS), which limits the maximum mass of neutron stars. To explain the observation of 2M⊙ neutron stars, significant repulsion must exist in the high-density (short-range) BB interaction.</p>
+          <p>Historically, the ΛN interaction has been studied through hypernuclear spectroscopy. However, these bulk properties exhibit limited sensitivity to the short-range details of the interaction. Multiple potential models with different internal structures can frequently reproduce the same binding energy, necessitating a tool sensitive to short-distance dynamics.</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/femto_img_0.png" alt="αΛ potentials for various models" onerror="this.style.display='none'">
+          <p class="caption">αΛ potentials for various models. The short-range behavior differs drastically, yet they all yield the same binding energy for hypernuclei. (Figure from <a href="https://doi.org/10.1103/PhysRevC.110.014001" target="_blank" rel="noopener">A. Jinno, Y. Kamiya, T. Hyodo, and A. Ohnishi, Phys. Rev. C 110, 014001 (2024).</a>)</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>αΛ Femtoscopy & J-PARC E88</h2>
+          <p>Femtoscopy is a revolutionary tool that measures the momentum correlation between two particles at low relative momentum, providing a unique way to probe the space-time characteristics of the emission source and final-state interactions. When the emission source size is small (R &lesssim; 1.5 fm), the correlation functions become highly sensitive to the short-range part of the potential.</p>
+          
+          <div class="experiment-image" style="margin: 3rem 0;">
+            <img src="images/experiments/femtoscopy_concept.png" alt="Concept diagram of femtoscopy" onerror="this.style.display='none'">
+            <p class="caption">Conceptual diagram of femtoscopy. Two particles emitted from a high-energy collision source (fireball) interact via quantum interference and potential fields (strong force, Coulomb) as they travel outwards.</p>
+          </div>
+
+          <p>The proton-nucleus (pA) collisions at J-PARC naturally produce these small source sizes. We specifically focus on the αΛ system. The α particle is exceptionally dense, reaching nearly twice the normal nuclear saturation density, allowing us to study the ΛN interaction at densities relevant to neutron star cores. Furthermore, the α particle has both zero spin and zero isospin, providing a "clean" measurement without the need for state decomposition.</p>
+          <p>The primary goal of the J-PARC E88 experiment is to measure the invariant mass of K<sup>+</sup>K<sup>-</sup> produced from φ meson decays in pA reactions, aiming to investigate the partial restoration of chiral symmetry in nuclear matter. Taking advantage of the high-statistics data collected by the high-resolution magnetic spectrometer for this primary purpose, we will <strong>simultaneously conduct αΛ femtoscopy</strong>. By simultaneously analyzing pp, pα, and Λp pairs, we can self-consistently determine the source sizes and extract the first definitive constraints on the short-range αΛ interaction.</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/femto_img_1.png" alt="Predicted αΛ correlation functions" onerror="this.style.display='none'">
+          <p class="caption">Predicted αΛ correlation functions for different source sizes and potential models. Smaller source sizes maximize sensitivity to the inner structure of the interaction potential. (Figure from <a href="https://doi.org/10.1103/PhysRevC.110.014001" target="_blank" rel="noopener">A. Jinno, Y. Kamiya, T. Hyodo, and A. Ohnishi, Phys. Rev. C 110, 014001 (2024).</a>)</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>STAR Beam Energy Scan (BES) Program</h2>
+          <p>To verify the consistency of the interaction models across different system sizes and energies, we also analyze αΛ correlations in heavy-ion (AA) collisions. We are participating in the STAR Beam Energy Scan (BES) program at RHIC (√sNN ~ 7.7 GeV) to study these correlations in a dense, heavy-ion environment.</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>Future Prospect: Spin-Polarized Femtoscopy at J-PARC-HI</h2>
+          <p>The proposed J-PARC Heavy-Ion (J-PARC-HI) project will introduce a revolutionary capability for spin-dependent femtoscopy. While traditional femtoscopy provides pair-spin averaged results, J-PARC-HI will integrate a proton polarimeter. By measuring the proton helicity and utilizing the weak-decay asymmetry of the Λ, we will achieve a full spin-decomposition of the Λp correlation function, independently determining the scattering parameters for the spin-singlet and spin-triplet states.</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/femto_img_3.png" alt="Azimuthal angle distributions for Λp femtoscopy" onerror="this.style.display='none'">
+          <p class="caption">Expected azimuthal angle distributions for the spin-singlet (red) and spin-triplet (green) states in Λp femtoscopy at J-PARC-HI, demonstrating the feasibility of spin decomposition.</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="refs/Baryon2025_ichikawa.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            Baryon 2025 Proceeding (PDF)
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research_en.html" style="color: var(--primary-color); text-decoration: underline;">Back to Research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

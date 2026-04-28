@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>フェムトスコピーによる高密度核物質の探求 - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
+        <li><a href="gyoseki.html">業績一覧</a></li>
+        <li><a href="education.html">教育・担当講義</a></li>
+        <li><a href="lab.html">研究室の様子</a></li>
+        <li><a href="contact.html">アクセス・連絡先</a></li>
+        <li class="lang-switch"><a href="femto_en.html">EN</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>フェムトスコピーによる高密度核物質の探求</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>物理的な動機・背景 (Physics Motivation)</h2>
+          <p>高密度核物質におけるバリオン・バリオン間相互作用、とりわけハイペロンと核子（ΛN）の相互作用の解明は、原子核物理・ハドロン物理における最も重要な課題の一つです。これは天体物理学における「ハイペロン・パズル」と深く結びついています。理論的には、高密度状態の中性子星のコアにハイペロンが出現すると、状態方程式（EoS）が柔らかくなり、観測されている太陽質量の2倍に達する重い中性子星の存在を説明できなくなります。これを解決するためには、高密度（近距離）におけるΛN間に強い反発力（斥力コア）が存在するかどうかを実験的に明らかにすることが不可欠です。</p>
+          <p>これまで、ΛN相互作用は主にハイパー核の分光実験から研究されてきました。しかし、ハイパー核の結合エネルギーなどのマクロな性質は、近距離での相互作用の詳細にあまり感度がありません。複数の異なるポテンシャルモデルが同じ結合エネルギーを再現できてしまうという問題があり、より近距離のダイナミクスに直接アクセスできる新しい手法が求められていました。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/femto_img_0.png" alt="様々なモデルによるαΛポテンシャル" onerror="this.style.display='none'">
+          <p class="caption">様々なモデルによるαΛポテンシャル。近距離での振る舞いはモデルにより大きく異なりますが、これらは全て同じハイパー核の結合エネルギーを再現します。（図は <a href="https://doi.org/10.1103/PhysRevC.110.014001" target="_blank" rel="noopener">A. Jinno, Y. Kamiya, T. Hyodo, and A. Ohnishi, Phys. Rev. C 110, 014001 (2024).</a> より引用）</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>αΛフェムトスコピーとE88実験 (αΛ Femtoscopy & J-PARC E88)</h2>
+          <p>この課題を解決する革新的な手法が「フェムトスコピー」です。フェムトスコピーは、放出された2粒子の運動量相関を測定することで、粒子の放出源の時空スケールや最終状態相互作用をプローブする技術です。特に放出源のサイズが1.5 fm程度と小さい場合、ポテンシャルの近距離成分に対して極めて高い感度を持ちます。</p>
+          
+          <div class="experiment-image" style="margin: 3rem 0;">
+            <img src="images/experiments/femtoscopy_concept.png" alt="フェムトスコピーの概念図" onerror="this.style.display='none'">
+            <p class="caption">フェムトスコピーの概念図。高エネルギー衝突で生じた火の玉（放出源）から飛び出した2粒子が、量子力学的な波の干渉や相互作用（強い力・クーロン力など）を経ながら検出器へと向かう様子を示しています。</p>
+          </div>
+
+          <p>J-PARCでの陽子・原子核（pA）衝突は、まさにこの小さな放出源を作り出す理想的な環境です。我々は、α粒子とΛ粒子の相関（αΛフェムトスコピー）に注目しています。α粒子は中心密度が通常の原子核の飽和密度の約2倍にも達するため、中性子星コアに近い高密度環境での相互作用を調べるのに最適です。また、スピンとアイソスピンがともにゼロであるため、状態の分離が不要で「クリーン」な測定が可能です。</p>
+          <p>J-PARC E88実験の主目的は、pA反応において生成されるφ中間子の質量をK<sup>+</sup>K<sup>-</sup>の不変質量から精密に測定し、核媒質中におけるカイラル対称性の回復を調べることです。この主目的に向けた高分解能磁気スペクトロメータによる大統計データ測定を最大限に活かし、我々は<strong>同時にαΛフェムトスコピーも実施</strong>します。複数のチャンネル（pp, pα, Λp）の相関を同時に解析することで放出源サイズを精密に決定し、αΛの近距離相互作用に初めての実験的制限を与えます。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/femto_img_1.png" alt="放出源サイズとポテンシャルモデルによるαΛ相関関数の予測" onerror="this.style.display='none'">
+          <p class="caption">放出源サイズとポテンシャルモデルによるαΛ相関関数の予測。放出源サイズ（R）が小さいほど、異なる相互作用モデルによる相関関数の差が顕著になります。（図は <a href="https://doi.org/10.1103/PhysRevC.110.014001" target="_blank" rel="noopener">A. Jinno, Y. Kamiya, T. Hyodo, and A. Ohnishi, Phys. Rev. C 110, 014001 (2024).</a> より引用）</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>STAR BES計画での展開 (STAR BES Program)</h2>
+          <p>J-PARCでのpA衝突実験に加え、重イオン衝突（AA）におけるデータとも突き合わせ、システムサイズやエネルギーが異なる環境での相互作用モデルの整合性を検証します。我々は、RHIC加速器を用いたSTAR Beam Energy Scan (BES) 計画（√sNN ~ 7.7 GeV）に参加し、重イオン衝突データを用いたαΛ相関の解析も主導しています。</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>将来計画：J-PARC-HIでのスピン偏極フェムトスコピー</h2>
+          <p>さらに将来的な展望として、J-PARCの重イオン加速計画（J-PARC-HI）におけるスピン偏極フェムトスコピーを計画しています。従来のフェムトスコピーではスピン状態が平均化されてしまいますが、J-PARC-HIでは陽子偏極度計（Proton polarimeter）を導入し、Λ粒子の弱崩壊の非対称性と組み合わせることで、Λp相互作用をスピン一重項（singlet）とスピン三重項（triplet）のそれぞれの状態に完全分離して測定することを目指しています。これにより、高密度核物質におけるバリオン間相互作用のさらなる精密な理解が期待されます。</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/femto_img_3.png" alt="J-PARC-HIでのスピン偏極フェムトスコピーによる方位角分布の予測" onerror="this.style.display='none'">
+          <p class="caption">J-PARC-HIのΛpフェムトスコピーで期待される、スピン一重項（赤）と三重項（緑）状態の方位角分布の違い。これにより相互作用のスピン依存性を分離可能です。</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="refs/Baryon2025_ichikawa.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            Baryon 2025 Proceeding (PDF)
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research.html" style="color: var(--primary-color); text-decoration: underline;">研究内容一覧に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

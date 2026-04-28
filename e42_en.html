@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E42: Search for H-Dibaryon - 市川裕大（東北大学）</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .experiment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experiment-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+    }
+    .experiment-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .experiment-image {
+      text-align: center;
+      margin: 2rem 0;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--surface-border);
+    }
+    .experiment-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .experiment-image .caption {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a href="index_en.html" class="nav-logo">Y. Ichikawa</a>
+      <ul>
+        <li><a href="index_en.html">Home</a></li>
+        <li><a href="research_en.html" class="active">Research</a></li>
+        <li><a href="gyoseki_en.html">Publications</a></li>
+        <li><a href="education_en.html">Education</a></li>
+        <li><a href="lab_en.html">Lab</a></li>
+        <li><a href="contact_en.html">Contact</a></li>
+        <li class="lang-switch"><a href="e42.html">JP</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" style="height: 40vh; min-height: 300px;">
+    <div class="hero-overlay">
+      <h1>E42: Search for H-Dibaryon</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="research-overview">
+      <div class="card experiment-container">
+        
+        <div class="experiment-section">
+          <h2>Physics Motivation</h2>
+          <p>Normal hadrons are composed of either 3 quarks (baryons) or a quark-antiquark pair (mesons). But can a state with 6 quarks exist?
+In 1977, R. Jaffe predicted a highly symmetric, deeply bound 6-quark state called the 'H-dibaryon' (uuddss), based on the Pauli exclusion principle and color-magnetic interactions. In particular, the search for the H-dibaryon is extremely important for understanding the color-magnetic interaction between quarks, which plays a key role in hadronic mass splitting and short-range attractive forces.
+Recently, first-principle Lattice QCD calculations by the HAL QCD collaboration have provided a new perspective, suggesting that a resonance state may exist near the heavier ΞN (Xi-nucleon) threshold, rather than the originally assumed ΛΛ threshold.
+If discovered, the H-dibaryon would be a definitive proof of multiquark states, breaking the conventional boundaries of the quark model. This represents a profound test of Quantum Chromodynamics (QCD) and how the strong force binds fundamental particles into matter.</p>
+        </div>
+
+        <div class="experiment-image">
+          <img src="images/experiments/e42_img1.png" alt="E42: Search for H-Dibaryon Figure" onerror="this.style.display='none'">
+          <p class="caption">ΛΛ invariant mass spectrum from past experiment (KEK E522). The enhancement near the threshold suggests the existence of an H-dibaryon resonance or strongly attractive interaction.</p>
+        </div>
+
+        <div class="experiment-section">
+          <h2>The Experiment</h2>
+          <p>We use the high-intensity K- beam at J-PARC to induce the (K-, K+) reaction on nuclear targets, producing double-Λ states and Ξ- hyperons. By utilizing the large-acceptance HypTPC spectrometer, we capture the 3D tracks of charged particles with high statistics and excellent energy resolution.
+The data acquisition for the E42 experiment was successfully completed in 2021. While the main analysis searching for the H-dibaryon is still ongoing, crucial results measuring the cross sections for Ξ- and ΛΛ production have already been published in PTEP (<a href="https://doi.org/10.1093/ptep/ptaf064" target="_blank" rel="noopener">PTEP 2025, 091D01</a>). These results set a strict upper bound on the decay width of the Ξ- particle in nuclear matter, marking a significant milestone in our ongoing research.</p>
+        </div>
+        
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="https://j-parc.jp/researcher/Hadron/en/pac_1201/pdf/KEK_J-PARC-PAC2011-06.pdf" target="_blank" rel="noopener" style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: #fff; text-decoration: none; border-radius: 2rem; font-weight: bold; transition: background-color 0.3s ease;">
+            View Detailed Proposal (PDF)
+          </a>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="research_en.html" style="color: var(--primary-color); text-decoration: underline;">Back to Research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="ロゴ" class="footer-logo" />
+      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.8rem;">© Yudai Ichikawa. All Rights Reserved.</p>
+    </div>  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
