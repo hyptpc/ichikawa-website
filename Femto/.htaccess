@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Internal Meeting (Femtoscopy)"
+AuthUserFile /home/ichikawa/public_html/Femto/.htpasswd
+Require valid-user
